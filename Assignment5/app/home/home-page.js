@@ -10,6 +10,7 @@ function onNavigatingTo(args) {
 function onDrawerButtonTap(args) {
     const sideDrawer = app.getRootView();
     sideDrawer.showDrawer();
+    console.log("drawer opened");
 }
 
 exports.onNavigatingTo = onNavigatingTo;

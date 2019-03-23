@@ -23,6 +23,40 @@
          margin-top: 20%;
      }
  }
+
+.statText{
+    font-family: "FontAwesome";
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 60px;
+}
+
+.statNum{
+    padding: 10 0 10 0;
+    text-align: center;
+    width: 10%;
+    font-size: 20px;
+    border-width: 1 1 1 0;
+    border-color: black;
+    -webkit-tap-highlight-color: black;
+}
+
+.default{
+    color: green;
+}
+
+.current{
+    padding: 10 0 10 0;
+    text-align: center;
+    width: 10%;
+    font-size: 20px;
+    border-width: 1 1 1 0;
+    border-color: black;
+    background-color: lightgray;
+    color: black;
+    -webkit-tap-highlight-color: black;
+}
+
  //Action bar
  ActionBar .action-bar-title {
      horizontal-align: center;

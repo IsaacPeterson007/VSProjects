@@ -1,0 +1,71 @@
+<Page class="page" navigatingTo="onNavigatingTo" loaded="onPageLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android
+        because ActionItems are shown on the right side of the ActionBar
+        -->
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the
+        NavigationButton as a side-drawer button in iOS is not possible,
+        because its function is to always navigate back in the application.
+        -->
+        <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left">
+        </ActionItem>
+        <Label class="action-bar-title" text="Brandon Jasper"></Label>
+    </ActionBar>
+
+    <StackLayout>
+        <Label text="Speed" class="statText" />
+        <StackLayout orientation="horizontal" id="0">
+            <Label text="0" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="4" tap="onTap" class="statNum"/>
+            <Label text="4" tap="onTap" class="statNum default"/>
+            <Label text="4" tap="onTap" class="statNum"/>
+            <Label text="5" tap="onTap" class="statNum"/>
+            <Label text="6" tap="onTap" class="statNum"/>
+            <Label text="7" tap="onTap" class="statNum"/>
+            <Label text="8" tap="onTap" class="statNum"/>
+        </StackLayout>
+        <Label text="Might" class="statText" />
+        <StackLayout orientation="horizontal" id="1">
+            <Label text="0" tap="onTap" class="statNum"/>
+            <Label text="2" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="4" tap="onTap" class="statNum default"/>
+            <Label text="5" tap="onTap" class="statNum"/>
+            <Label text="6" tap="onTap" class="statNum"/>
+            <Label text="6" tap="onTap" class="statNum"/>
+            <Label text="7" tap="onTap" class="statNum"/>
+        </StackLayout>
+        <Label text="Sanity" class="statText" />
+        <StackLayout orientation="horizontal" id="2">
+            <Label text="0" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="4" tap="onTap" class="statNum default"/>
+            <Label text="5" tap="onTap" class="statNum"/>
+            <Label text="6" tap="onTap" class="statNum"/>
+            <Label text="7" tap="onTap" class="statNum"/>
+            <Label text="8" tap="onTap" class="statNum"/>
+        </StackLayout>
+        <Label text="Knowledge" class="statText" />
+        <StackLayout orientation="horizontal" id="3">
+            <Label text="0" tap="onTap" class="statNum"/>
+            <Label text="1" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum"/>
+            <Label text="3" tap="onTap" class="statNum default"/>
+            <Label text="5" tap="onTap" class="statNum"/>
+            <Label text="5" tap="onTap" class="statNum"/>
+            <Label text="6" tap="onTap" class="statNum"/>
+            <Label text="6" tap="onTap" class="statNum"/>
+            <Label text="7" tap="onTap" class="statNum"/>
+        </StackLayout>
+
+    </StackLayout>
+</Page>

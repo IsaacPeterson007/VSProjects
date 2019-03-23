@@ -6,6 +6,7 @@ const AppRootViewModel = require("./app-root-view-model");
 function onLoaded(args) {
     const drawerComponent = args.object;
     drawerComponent.bindingContext = new AppRootViewModel();
+
 }
 
 function onNavigationItemTap(args) {
