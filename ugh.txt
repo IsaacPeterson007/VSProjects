@@ -1,0 +1,6 @@
+var myKey = "e7a01146683d4e7090551d870902ad21";
+var req = new Request( 'https://newsapi.org/v2/top-headlines?country=us&apiKey=' + myKey );
+fetch(req).then(responce => responce.json()).then(data => {
+    console.log(`Pop ui with ${data.articles.length} articles`);
+})
+.catch(error => console.error(error));

@@ -1,0 +1,40 @@
+<!--Isaac Peterson
+    Assignment 2 -->
+
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer" loaded="pageLoaded">
+
+<ActionBar title="Fun Facts" class="action-bar" />
+
+    <sd:RadSideDrawer id="sideDrawer">
+        <!-- side drawer content -->
+        <sd:RadSideDrawer.drawerContent>
+            <StackLayout class="sidedrawer-left">
+                <StackLayout class="sidedrawer-header">
+                    <Label text="SadSideDrawer" class="sidedrawer-header-brand" />
+                </StackLayout>
+                <StackLayout class="sidedrawer-content">
+                    <Button text="Home" tap="goHome" />
+                    <Button text="Fun Facts" tap="goFunFacts"/>
+                    <Button text="Customize" tap="goCustomize"/>
+                </StackLayout>
+            </StackLayout>
+        </sd:RadSideDrawer.drawerContent>
+
+        <!-- The main content -->
+        <sd:RadSideDrawer.mainContent>
+            <DockLayout>
+                    <StackLayout dock="top">                       
+                        <Label class="funFactTxt" text=" Fun Fact: I dive in ponds for golf balls..." />
+                        <Image src="~/Images/diving.jpg" strech="aspectFill" />
+                    </StackLayout>
+                    <StackLayout orientation="horizontal">
+                        <Button class="botNav" tap="goHome" text="Home" width="33%" height="50" verticalAlignment="bottom"/>
+                        <Button class="botNav" tap="goFunFacts" text="Fun Facts" width="33%" height="50" verticalAlignment="bottom"/>
+                        <Button class="botNav" tap="goCustomize" text="Customize" width="34%" height="50" verticalAlignment="bottom"/>
+                    </StackLayout>
+            </DockLayout> 
+        </sd:RadSideDrawer.mainContent>
+    </sd:RadSideDrawer>
+</Page>

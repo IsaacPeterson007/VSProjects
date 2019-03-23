@@ -1,0 +1,20 @@
+<!-- Isaac Peterson CMSC 4233 -->
+
+<Page class="background"
+    navigatingTo="onNavigatingTo"  
+    loaded="onPageLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <GridLayout rows="auto" columns="*" height="30">
+            <Label row="0" class="action-bar-title" text="News Reader" horizontalAlignment="center" verticalAlignment="top"></Label>
+            <Image row="0" src="~/images/Settings_black-512.png" width="30" height="30" horizontalAlignment="right" verticalAlignment="top" tap="settingsBtn"/>
+        </GridLayout>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout id="newsList">
+            <!-- This will be auto populated by home-page.js with the news feed -->
+        </StackLayout>
+    </ScrollView>
+</Page>

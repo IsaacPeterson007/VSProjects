@@ -1,0 +1,46 @@
+<!--Isaac Peterson
+    Assignment 2 -->
+
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:sd="nativescript-ui-sidedrawer" xmlns:bottomNav="nativescript-bottom-navigation" loaded="pageLoaded">
+<ActionBar title="Home" class="action-bar" />
+
+    <sd:RadSideDrawer id="sideDrawer">
+        <!-- side drawer content -->
+        <sd:RadSideDrawer.drawerContent>
+            <StackLayout class="sidedrawer-left">
+                <StackLayout class="sidedrawer-header">
+                    <Label text="SadSideDrawer" class="sidedrawer-header-brand" />
+                </StackLayout>
+                <StackLayout class="sidedrawer-content">
+                    <Button text="Home" tap="goHome" />
+                    <Button text="Fun Facts" tap="goFunFacts"/>
+                    <Button text="Customize" tap="goCustomize"/>
+                </StackLayout>
+            </StackLayout>
+        </sd:RadSideDrawer.drawerContent>
+
+        <!-- The main content -->
+        <sd:RadSideDrawer.mainContent>
+            <DockLayout>
+                    <StackLayout dock="top">
+                        <Button text="Home" tap="goHome"/>
+                        <Button text="Fun Facts" tap="goFunFacts"/>
+                        <Button text="Customize" tap="goCustomize"/>
+                        <Label class="para" text="Isaac Peterson" />
+                        <Label class="para" text="CMSC 4233 Spring 2019" />
+                        <Label class="para" text="Assignment 2" />
+                    </StackLayout>
+                    <StackLayout orientation="horizontal">
+                        <Button class="botNav" tap="goHome" text="Home" width="33%" height="50" verticalAlignment="bottom"/>
+                        <Button class="botNav" tap="goFunFacts" text="Fun Facts" width="33%" height="50" verticalAlignment="bottom"/>
+                        <Button class="botNav" tap="goCustomize" text="Customize" width="34%" height="50" verticalAlignment="bottom"/>
+                    </StackLayout>
+            </DockLayout> 
+        </sd:RadSideDrawer.mainContent>
+    </sd:RadSideDrawer>
+</Page>
+
+
+

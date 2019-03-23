@@ -1,0 +1,13 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Home"></Label>
+    </ActionBar>
+
+    <GridLayout rows="auto,*" columns="auto,*">
+        <Button text="Click Me Daddy" tap="onTap" row="0" col="0"/>
+        <Label id="label" text="youve touched me 0 times" row="0" col="1"/>
+    </GridLayout>
+</Page>
