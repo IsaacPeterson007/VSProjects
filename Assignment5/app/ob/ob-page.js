@@ -1,6 +1,6 @@
 const app = require("tns-core-modules/application");
 var view = require("ui/core/view");
-const HomeViewModel = require("./bj-view-model");
+const HomeViewModel = require("./ob-view-model");
 var stackModule = require("tns-core-modules/ui/layouts/stack-layout");
 const frameModule = require("tns-core-modules/ui/frame");
 const observableModule = require("tns-core-modules/data/observable");

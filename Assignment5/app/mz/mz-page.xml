@@ -14,7 +14,7 @@
         -->
         <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Brandon Jasper"></Label>
+        <Label class="action-bar-title" text="Madame Zostra"></Label>
     </ActionBar>
 
     <ScrollView>
@@ -23,14 +23,14 @@
                 <Label text="Speed" class="statText" />
                 <StackLayout orientation="horizontal" id="0">
                     <Label id="0" text="0" tap="onTap" class="statNum"/>
-                    <Label id="1" text="3" tap="onTap" class="statNum"/>
-                    <Label id="2" text="4" tap="onTap" class="statNum"/>
-                    <Label id="3" text="4" tap="onTap" class="statNum default"/>
-                    <Label id="4" text="4" tap="onTap" class="statNum"/>
+                    <Label id="1" text="2" tap="onTap" class="statNum"/>
+                    <Label id="2" text="3" tap="onTap" class="statNum"/>
+                    <Label id="3" text="3" tap="onTap" class="statNum default"/>
+                    <Label id="4" text="5" tap="onTap" class="statNum"/>
                     <Label id="5" text="5" tap="onTap" class="statNum"/>
                     <Label id="6" text="6" tap="onTap" class="statNum"/>
-                    <Label id="7" text="7" tap="onTap" class="statNum"/>
-                    <Label id="8" text="8" tap="onTap" class="statNum"/>
+                    <Label id="7" text="6" tap="onTap" class="statNum"/>
+                    <Label id="8" text="7" tap="onTap" class="statNum"/>
                 </StackLayout>
             </StackLayout>
 
@@ -43,9 +43,9 @@
                     <Label id="3" text="3" tap="onTap" class="statNum"/>
                     <Label id="4" text="4" tap="onTap" class="statNum default"/>
                     <Label id="5" text="5" tap="onTap" class="statNum"/>
-                    <Label id="6" text="6" tap="onTap" class="statNum"/>
-                    <Label id="7" text="6" tap="onTap" class="statNum"/>
-                    <Label id="8" text="7" tap="onTap" class="statNum"/>
+                    <Label id="6" text="5" tap="onTap" class="statNum"/>
+                    <Label id="7" text="5" tap="onTap" class="statNum"/>
+                    <Label id="8" text="6" tap="onTap" class="statNum"/>
                 </StackLayout>
             </StackLayout>
 
@@ -53,13 +53,13 @@
                 <Label text="Sanity" class="statText" />
                 <StackLayout loaded="onSanityLoaded" orientation="horizontal" id="2">
                     <Label id="0" text="0" tap="onTap" class="statNum"/>
-                    <Label id="1" text="3" tap="onTap" class="statNum"/>
-                    <Label id="2" text="3" tap="onTap" class="statNum"/>
-                    <Label id="3" text="3" tap="onTap" class="statNum"/>
-                    <Label id="4" text="4" tap="onTap" class="statNum default"/>
-                    <Label id="5" text="5" tap="onTap" class="statNum"/>
-                    <Label id="6" text="6" tap="onTap" class="statNum"/>
-                    <Label id="7" text="7" tap="onTap" class="statNum"/>
+                    <Label id="1" text="4" tap="onTap" class="statNum"/>
+                    <Label id="2" text="4" tap="onTap" class="statNum"/>
+                    <Label id="3" text="4" tap="onTap" class="statNum default"/>
+                    <Label id="4" text="5" tap="onTap" class="statNum"/>
+                    <Label id="5" text="6" tap="onTap" class="statNum"/>
+                    <Label id="6" text="7" tap="onTap" class="statNum"/>
+                    <Label id="7" text="8" tap="onTap" class="statNum"/>
                     <Label id="8" text="8" tap="onTap" class="statNum"/>
                 </StackLayout>
             </StackLayout>
@@ -70,12 +70,12 @@
                     <Label id="0" text="0" tap="onTap" class="statNum"/>
                     <Label id="1" text="1" tap="onTap" class="statNum"/>
                     <Label id="2" text="3" tap="onTap" class="statNum"/>
-                    <Label id="3" text="3" tap="onTap" class="statNum default"/>
-                    <Label id="4" text="5" tap="onTap" class="statNum"/>
-                    <Label id="5" text="5" tap="onTap" class="statNum"/>
-                    <Label id="6" text="6" tap="onTap" class="statNum"/>
+                    <Label id="3" text="4" tap="onTap" class="statNum"/>
+                    <Label id="4" text="4" tap="onTap" class="statNum default"/>
+                    <Label id="5" text="4" tap="onTap" class="statNum"/>
+                    <Label id="6" text="5" tap="onTap" class="statNum"/>
                     <Label id="7" text="6" tap="onTap" class="statNum"/>
-                    <Label id="8" text="7" tap="onTap" class="statNum"/>
+                    <Label id="8" text="6" tap="onTap" class="statNum"/>
                 </StackLayout>
             </StackLayout>
 
