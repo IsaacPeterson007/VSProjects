@@ -32,13 +32,19 @@ function onNavigationItemTap(args) {
         x.col = "3";
         x.className = "x";
         x.id = 3;
+        component.addChild(x);
         x.addEventListener('tap', () => {
-            if(component.parent){
-                component.removeChild(component.parent.getViewById(2));
-                component.removeChild(component.parent.getViewById(3));
+
+            //THIS IS THE BUG WHERE SOMETIMES THE X BUTTON DOSENT WORK
+            try{
+            component.removeChild(component.parent.getViewById(2));
+            component.removeChild(component.parent.getViewById(3));
+            }
+            catch(err) {
+                console.log(err);
             }
         });
-        component.addChild(x);
+        
     }
 
     bindingContext.set("selectedPage", componentTitle);
