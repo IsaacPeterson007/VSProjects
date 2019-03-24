@@ -1,5 +1,5 @@
 const app = require("tns-core-modules/application");
-
+var appSettings = require("application-settings");
 const HomeViewModel = require("./home-view-model");
 
 function onNavigatingTo(args) {
@@ -13,5 +13,9 @@ function onDrawerButtonTap(args) {
     console.log("drawer opened");
 }
 
+function reset(args) {
+    appSettings.clear();
+}
+exports.reset = reset;
 exports.onNavigatingTo = onNavigatingTo;
 exports.onDrawerButtonTap = onDrawerButtonTap;

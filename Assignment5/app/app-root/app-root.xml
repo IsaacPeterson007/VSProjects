@@ -11,25 +11,35 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
 
     <nsDrawer:RadSideDrawer.drawerContent>
         <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
-            <StackLayout class="sidedrawer-header">
-                <!-- <Label class="sidedrawer-header-image fa" text="&#xf2bd;" /> -->
+            <!-- <StackLayout class="sidedrawer-header">
+                <Label class="sidedrawer-header-image fa" text="&#xf2bd;" />
                 <Label class="sidedrawer-header-brand" text="Isaac Peterson" />
                 <Label class="sidedrawer-header-brand" text="Assignment 5  CMSC 4233" />
                 <Label class="sidedrawer-header-brand" text="Spring 2019" />
                 <Label class="sidedrawer-header-brand" text="Betrayal at House on the Hill" />
                 <Label class="sidedrawer-header-brand" text="Stat Tracker" />
-                <!-- <Label class="footnote" text="username@mail.com" /> -->
-            </StackLayout>
+                <Label class="footnote" text="username@mail.com" />
+            </StackLayout> -->
 
             <ScrollView row="1">
                 <StackLayout class="sidedrawer-content">
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Pl' ? ' selected': '') }}" route="pl/pl-page" title="Pl" tap="onNavigationItemTap">
-                        <Image row="0" col="0" src="~/images/mugshot/h_professorLongfellow.png" class="fa" />
-                        <Label row="0" col="1" text="Professor Longfellow" class="p-r-10" />
+                    <GridLayout id="0" columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Home' ? ' selected': '') }}" route="home/home-page" title="Home" tap="onNavigationItemTap">
+                        <Image row="0" col="0" src="~/images/home-512.png" class="fa" />
+                        <Label row="0" col="1" text="Home" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Fr' ? ' selected': '') }}" route="fr/fr-page" title="Fr" tap="onNavigationItemTap">
+                    <StackLayout class="hr-light"></StackLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Pl' ? ' selected': '') }}" route="pl/pl-page" title="Pl" tap="onNavigationItemTap">
+                        <Image row="0" col="0" src="~/images/mugshot/h_professorLongfellow.png" class="fa" />
+                        <Label row="0" col="1" text="Professor Longfellow" class="p-r-10" />
+                        <!-- <Image row="0" col="2" src="~/images/checkmark.png" class="check" /> -->
+                    </GridLayout>
+
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Fr' ? ' selected': '') }}" route="fr/fr-page" title="Fr" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_fatherRhinehardt.png" class="fa" />
                         <Label row="0" col="1" text="Father Rhinehardt" class="p-r-10" />
                     </GridLayout>
@@ -37,12 +47,12 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                     <StackLayout class="hr-light"></StackLayout>
                     <StackLayout class="hr-light"></StackLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Dw' ? ' selected': '') }}" route="dw/dw-page" title="Dw" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Dw' ? ' selected': '') }}" route="dw/dw-page" title="Dw" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_darrinFlashWilliams.png" class="fa" />
                         <Label row="0" col="1" text="Darrin Flash Williams" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Ob' ? ' selected': '') }}" route="ob/ob-page" title="Ob" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Ob' ? ' selected': '') }}" route="ob/ob-page" title="Ob" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_oxBellows.png" class="fa" />
                         <Label row="0" col="1" text="Ox Bellows" class="p-r-10" />
                     </GridLayout>
@@ -50,12 +60,12 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                     <StackLayout class="hr-light"></StackLayout>
                     <StackLayout class="hr-light"></StackLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Bj' ? ' selected': '') }}" route="bj/bj-page" title="Bj" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Bj' ? ' selected': '') }}" route="bj/bj-page" title="Bj" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_brandonJaspers.png" class="fa" />
                         <Label row="0" col="1" text="Brandon Jasper" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Pa' ? ' selected': '') }}" route="pa/pa-page" title="Pa" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Pa' ? ' selected': '') }}" route="pa/pa-page" title="Pa" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_peterAkimoto.png" class="fa" />
                         <Label row="0" col="1" text="Peter Akimoto" class="p-r-10" />
                     </GridLayout>
@@ -63,12 +73,12 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                     <StackLayout class="hr-light"></StackLayout>
                     <StackLayout class="hr-light"></StackLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Zi' ? ' selected': '') }}" route="zi/zi-page" title="Zi" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Zi' ? ' selected': '') }}" route="zi/zi-page" title="Zi" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_zoeIngstrom.png" class="fa" />
                         <Label row="0" col="1" text="Zoe Ingstrom" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Md' ? ' selected': '') }}" route="md/md-page" title="Md" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Md' ? ' selected': '') }}" route="md/md-page" title="Md" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_missyDubourde.png" class="fa" />
                         <Label row="0" col="1" text="Missy Dubourde" class="p-r-10" />
                     </GridLayout>
@@ -76,12 +86,12 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                     <StackLayout class="hr-light"></StackLayout>
                     <StackLayout class="hr-light"></StackLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Vl' ? ' selected': '') }}" route="vl/vl-page" title="Vl" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Vl' ? ' selected': '') }}" route="vl/vl-page" title="Vl" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_vivianLopez.png" class="fa" />
                         <Label row="0" col="1" text="Vivian Lopez" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Mz' ? ' selected': '') }}" route="mz/mz-page" title="Mz" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Mz' ? ' selected': '') }}" route="mz/mz-page" title="Mz" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_madameZostra.png" class="fa" />
                         <Label row="0" col="1" text="Madame Zostra" class="p-r-10" />
                     </GridLayout>
@@ -89,61 +99,20 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                     <StackLayout class="hr-light"></StackLayout>
                     <StackLayout class="hr-light"></StackLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Hg' ? ' selected': '') }}" route="hg/hg-page" title="Hg" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Hg' ? ' selected': '') }}" route="hg/hg-page" title="Hg" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_heatherGranville.png" class="fa" />
                         <Label row="0" col="1" text="Heather Granville" class="p-r-10" />
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Jl' ? ' selected': '') }}" route="jl/jl-page" title="Jl" tap="onNavigationItemTap">
+                    <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Jl' ? ' selected': '') }}" route="jl/jl-page" title="Jl" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_jennyLeClerc.png" class="fa" />
                         <Label row="0" col="1" text="Jenny LeClerc" class="p-r-10" />
                     </GridLayout>
 
                     <StackLayout class="hr-light"></StackLayout>
                     <StackLayout class="hr-light"></StackLayout>
-
-
-
-
-
-
-
                     <StackLayout class="hr-light"></StackLayout>
 
-
-
-                    <!-- <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Home' ? ' selected': '') }}" route="home/home-page" title="Home" tap="onNavigationItemTap">
-                        <Label row="0" col="0" text="&#xf015;" class="fa" />
-                        <Label row="0" col="1" text="Home" class="p-r-10" />
-                    </GridLayout>
-
-                    <StackLayout class="hr-light"></StackLayout>
-
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Browse' ? ' selected': '') }}" route="browse/browse-page" title="Browse" tap="onNavigationItemTap">
-                        <Label row="0" col="0" text="&#xf1ea;" class="fa" />
-                        <Label row="0" col="1" text="Browse" class="p-r-10" />
-                    </GridLayout>
-
-                    <StackLayout class="hr-light"></StackLayout>
-
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Search' ? ' selected': '') }}" route="search/search-page" title="Search" tap="onNavigationItemTap">
-                        <Label row="0" col="0" text="&#xf002;" class="fa" />
-                        <Label row="0" col="1" text="Search" class="p-r-10" />
-                    </GridLayout>
-
-                    <StackLayout class="hr-light"></StackLayout>
-
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Featured' ? ' selected': '') }}" route="featured/featured-page" title="Featured" tap="onNavigationItemTap">
-                        <Label row="0" col="0" text="&#xf005;" class="fa" />
-                        <Label row="0" col="1" text="Featured" class="p-r-10" />
-                    </GridLayout>
-
-                    <StackLayout class="hr-light"></StackLayout>
-
-                    <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Settings' ? ' selected': '') }}" route="settings/settings-page" title="Settings" tap="onNavigationItemTap">
-                        <Label row="0" col="0" text="&#xf013;" class="fa" />
-                        <Label row="0" col="1" text="Settings" class="p-r-10" />
-                    </GridLayout> -->
                 </StackLayout>
             </ScrollView>
         </GridLayout>

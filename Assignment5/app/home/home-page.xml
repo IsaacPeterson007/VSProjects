@@ -1,6 +1,4 @@
-<Page
-    class="page"
-    navigatingTo="onNavigatingTo"  
+<Page class="page" navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
@@ -14,16 +12,24 @@
         NavigationButton as a side-drawer button in iOS is not possible,
         because its function is to always navigate back in the application.
         -->
-        <ActionItem icon="res://navigation/menu" 
-            android:visibility="collapsed" 
-            tap="onDrawerButtonTap"
-            ios.position="left">
+        <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="HomeD"></Label>
+        <Label class="action-bar-title" text="BaHotH Stats Tracker"></Label>
     </ActionBar>
 
-    <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf015;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+<ScrollView>
+    <StackLayout>
+        <Label />
+        <Label />
+        <Label class="homepage" text="Isaac Peterson" />
+        <Label class="homepage" text="Assignment 5  CMSC 4233" />
+        <Label class="homepage" text="Spring 2019" />
+        <Label class="homepage" text="Betrayal at House on the Hill" />
+        <Label class="homepage" text="Stat Tracker" />
+        <Label />
+        <Label class="homepage" text="Open the side drawer" />
+        <Label class="homepage" text="Select a character" />
+        <Label class="homepage" text="Change their stats!" />
+    </StackLayout>
+    </ScrollView>
 </Page>

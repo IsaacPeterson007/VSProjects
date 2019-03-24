@@ -9,6 +9,8 @@ $sidedrawer-header-image-offset-bottom: 5;
 $sidedrawer-list-item-offset-left: 15;
 $sidedrawer-list-icon-offset: 10;
 $sidedrawer-list-icon-size: 40;
+$sidedrawer-list-icon-size-check: 20;
+$sidedrawer-list-icon-size-x: 25;
 .sidedrawer {
     &.sidedrawer-left {
         background-color: $ab-background;
@@ -50,6 +52,16 @@ $sidedrawer-list-icon-size: 40;
 
         .fa {
             width: $sidedrawer-list-icon-size;
+            margin-right: $sidedrawer-list-icon-offset;
+        }
+
+        .check{
+            width: $sidedrawer-list-icon-size-check;
+            margin-right: $sidedrawer-list-icon-offset;
+        }
+
+        .x{
+            width: $sidedrawer-list-icon-size-x;
             margin-right: $sidedrawer-list-icon-offset;
         }
 
