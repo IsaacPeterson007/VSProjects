@@ -2,8 +2,9 @@
 @import '../app-variables';
 
 // Drawer navigation custom styles
-$sidedrawer-header-image-size: 60;
-$sidedrawer-header-image-offset-top: 20;
+$sidedrawer-header-image-size: 40;
+$sidedrawer-header-image-sizeH: 10;
+$sidedrawer-header-image-offset-top: 10;
 $sidedrawer-header-image-offset-bottom: 5;
 $sidedrawer-list-item-offset-left: 15;
 $sidedrawer-list-icon-offset: 10;
@@ -14,7 +15,7 @@ $sidedrawer-list-icon-size: 40;
 
         .sidedrawer-header-image {
             color: $background-dark;
-            height: $sidedrawer-header-image-size;
+            height: $sidedrawer-header-image-sizeH;
             width: $sidedrawer-header-image-size;
             font-size: $sidedrawer-header-image-size;
             padding: 0;
