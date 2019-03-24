@@ -33,8 +33,10 @@ function onNavigationItemTap(args) {
         x.className = "x";
         x.id = 3;
         x.addEventListener('tap', () => {
-            component.removeChild(component.parent.getViewById(2));
-            component.removeChild(component.parent.getViewById(3));
+            if(component.parent){
+                component.removeChild(component.parent.getViewById(2));
+                component.removeChild(component.parent.getViewById(3));
+            }
         });
         component.addChild(x);
     }

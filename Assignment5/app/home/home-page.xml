@@ -14,7 +14,7 @@
         -->
         <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="BaHotH Stats Tracker"></Label>
+        <Label class="action-bar-title" text="BaHotH Stat Tracker"></Label>
     </ActionBar>
 
 <ScrollView>
@@ -31,6 +31,8 @@
         <Label class="homepage" text="Select a character" />
         <Label class="homepage" text="Change their stats" />
         <Label class="homepage" text="Click the X to remove a character" />
+        <Label />
+        <Label class="homepage" text="Bug: sometimes x button doesn't work" />
     </StackLayout>
     </ScrollView>
 </Page>
