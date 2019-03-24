@@ -11,19 +11,10 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
 
     <nsDrawer:RadSideDrawer.drawerContent>
         <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
-            <!-- <StackLayout class="sidedrawer-header">
-                <Label class="sidedrawer-header-image fa" text="&#xf2bd;" />
-                <Label class="sidedrawer-header-brand" text="Isaac Peterson" />
-                <Label class="sidedrawer-header-brand" text="Assignment 5  CMSC 4233" />
-                <Label class="sidedrawer-header-brand" text="Spring 2019" />
-                <Label class="sidedrawer-header-brand" text="Betrayal at House on the Hill" />
-                <Label class="sidedrawer-header-brand" text="Stat Tracker" />
-                <Label class="footnote" text="username@mail.com" />
-            </StackLayout> -->
-
             <ScrollView row="1">
                 <StackLayout class="sidedrawer-content">
 
+                    <!-- EACH ONE IS A CHARACTER IN THE SIDEBAR -->
                     <GridLayout id="0" columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Home' ? ' selected': '') }}" route="home/home-page" title="Home" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/home-512.png" class="fa" />
                         <Label row="0" col="1" text="Home" class="p-r-10" />
@@ -36,7 +27,6 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                     <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Pl' ? ' selected': '') }}" route="pl/pl-page" title="Pl" tap="onNavigationItemTap">
                         <Image row="0" col="0" src="~/images/mugshot/h_professorLongfellow.png" class="fa" />
                         <Label row="0" col="1" text="Professor Longfellow" class="p-r-10" />
-                        <!-- <Image row="0" col="2" src="~/images/checkmark.png" class="check" /> -->
                     </GridLayout>
 
                     <GridLayout columns="auto, auto, auto, auto" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Fr' ? ' selected': '') }}" route="fr/fr-page" title="Fr" tap="onNavigationItemTap">

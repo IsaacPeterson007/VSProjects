@@ -15,13 +15,15 @@ function onNavigationItemTap(args) {
     const componentTitle = component.title;
     const bindingContext = component.bindingContext;
 
+    //ADD CHECK MARK AND X TO CHARACTER WHEN CLICKED
     if (component.getChildrenCount() < 3 && component.id != 0) {
+
         var image = new imageModule.Image();
         image.src = "~/images/checkmark.png";
         image.row = "0";
         image.col = "2";
         image.className = "check";
-        image.id = "2";
+        image.id = 2;
         component.addChild(image);
 
         var x = new imageModule.Image();
@@ -31,7 +33,7 @@ function onNavigationItemTap(args) {
         x.className = "x";
         x.id = 3;
         x.addEventListener('tap', () => {
-            component.removeChild(component.parent.getViewById("2"));
+            component.removeChild(component.parent.getViewById(2));
             component.removeChild(component.parent.getViewById(3));
         });
         component.addChild(x);
@@ -50,9 +52,5 @@ function onNavigationItemTap(args) {
     drawerComponent.closeDrawer();
 }
 
-function onImageTap(c){
-    console.log(c.title);
-}
-exports.onImageTap = onImageTap;
 exports.onLoaded = onLoaded;
 exports.onNavigationItemTap = onNavigationItemTap;

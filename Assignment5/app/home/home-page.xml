@@ -29,7 +29,8 @@
         <Label />
         <Label class="homepage" text="Open the side drawer" />
         <Label class="homepage" text="Select a character" />
-        <Label class="homepage" text="Change their stats!" />
+        <Label class="homepage" text="Change their stats" />
+        <Label class="homepage" text="Click the X to remove a character" />
     </StackLayout>
     </ScrollView>
 </Page>
