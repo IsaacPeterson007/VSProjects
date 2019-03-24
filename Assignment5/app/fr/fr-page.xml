@@ -1,0 +1,84 @@
+<Page class="page" navigatingTo="onNavigatingTo" loaded="onPageLoaded" 
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android
+        because ActionItems are shown on the right side of the ActionBar
+        -->
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the
+        NavigationButton as a side-drawer button in iOS is not possible,
+        because its function is to always navigate back in the application.
+        -->
+        <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left">
+        </ActionItem>
+        <Label class="action-bar-title" text="Father Rhinehardt"></Label>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout id="ultimateParent">
+            <StackLayout id="SpeedParent">
+                <Label text="Speed" class="statText" />
+                <StackLayout orientation="horizontal" id="0">
+                    <Label id="0" text="0" tap="onTap" class="statNum"/>
+                    <Label id="1" text="2" tap="onTap" class="statNum"/>
+                    <Label id="2" text="3" tap="onTap" class="statNum"/>
+                    <Label id="3" text="3" tap="onTap" class="statNum default"/>
+                    <Label id="4" text="4" tap="onTap" class="statNum"/>
+                    <Label id="5" text="5" tap="onTap" class="statNum"/>
+                    <Label id="6" text="6" tap="onTap" class="statNum"/>
+                    <Label id="7" text="7" tap="onTap" class="statNum"/>
+                    <Label id="8" text="7" tap="onTap" class="statNum"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout id="MightParent">
+                <Label text="Might" class="statText" />
+                <StackLayout loaded="onMightLoaded" orientation="horizontal" id="1">
+                    <Label id="0" text="0" tap="onTap" class="statNum"/>
+                    <Label id="1" text="1" tap="onTap" class="statNum"/>
+                    <Label id="2" text="2" tap="onTap" class="statNum"/>
+                    <Label id="3" text="2" tap="onTap" class="statNum default"/>
+                    <Label id="4" text="4" tap="onTap" class="statNum"/>
+                    <Label id="5" text="4" tap="onTap" class="statNum"/>
+                    <Label id="6" text="5" tap="onTap" class="statNum"/>
+                    <Label id="7" text="5" tap="onTap" class="statNum"/>
+                    <Label id="8" text="7" tap="onTap" class="statNum"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout id="SanityParent">
+                <Label text="Sanity" class="statText" />
+                <StackLayout loaded="onSanityLoaded" orientation="horizontal" id="2">
+                    <Label id="0" text="0" tap="onTap" class="statNum"/>
+                    <Label id="1" text="3" tap="onTap" class="statNum"/>
+                    <Label id="2" text="4" tap="onTap" class="statNum"/>
+                    <Label id="3" text="5" tap="onTap" class="statNum"/>
+                    <Label id="4" text="5" tap="onTap" class="statNum"/>
+                    <Label id="5" text="6" tap="onTap" class="statNum default"/>
+                    <Label id="6" text="7" tap="onTap" class="statNum"/>
+                    <Label id="7" text="7" tap="onTap" class="statNum"/>
+                    <Label id="8" text="8" tap="onTap" class="statNum"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout id="KnowledgeParent">
+                <Label text="Knowledge" class="statText" />
+                <StackLayout loaded="onKnowledgeLoaded" orientation="horizontal" id="3">
+                    <Label id="0" text="0" tap="onTap" class="statNum"/>
+                    <Label id="1" text="1" tap="onTap" class="statNum"/>
+                    <Label id="2" text="3" tap="onTap" class="statNum"/>
+                    <Label id="3" text="3" tap="onTap" class="statNum"/>
+                    <Label id="4" text="4" tap="onTap" class="statNum default"/>
+                    <Label id="5" text="5" tap="onTap" class="statNum"/>
+                    <Label id="6" text="6" tap="onTap" class="statNum"/>
+                    <Label id="7" text="6" tap="onTap" class="statNum"/>
+                    <Label id="8" text="8" tap="onTap" class="statNum"/>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</Page>
